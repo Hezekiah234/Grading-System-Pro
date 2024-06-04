@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+ <div class="contanier-fluid shadow-sm">
+  <div class="text-center my-2 fs-3 fw-bold ">GRADING SYSTEM PRO MAX</div>
+  <div class="row">
+   <div class="col-lg-5 col-12 mx-auto" id="firstDiv">
+
+   </div>
+   <div class="col-lg-5 col-12 mx-auto m-sm-2 m-2" id="group" >
+    <div class="alert alert-danger  text-center" id="err" style="display: none;"> space is empty</div>
+    <div class="row">
+     <div class="col-6 mx-auto " id="first">
+      <input type="text" class="form-control-sm my-3" placeholder="Enter Student Name" required id="studentName" autofocus maxlength="3">
+      <input type="number" class="form-control-sm my-3" placeholder="Biology" required id="biology">
+      <input type="number" class="form-control-sm my-3" placeholder="Physics" required id="physics">
+      <input type="number" class="form-control-sm my-3" placeholder="Chemistry" required id="chemistry">
+     </div>
+      <div id="second" class="col-6 mx-auto">
+        <input type="number" class="form-control-sm my-3" placeholder="Enter StudentID" required id="studentID" >
+        <input type="number" class="form-control-sm my-3" placeholder="Mathematics" required id="math" >
+        <input type="number" class="form-control-sm my-3" placeholder="Geography" required id="geo" >
+        <input type="number" class="form-control-sm my-3" placeholder="English" required id="eng" >
+      </div>
+    </div>
+
+     <button id="button" class="btn btn-dark col-sm-10 col-6 mx-auto" onclick="calc()">Calculate Grade</button>
+     <div id="answer" class="my-3 p-4">
+      <p class="show.Div" id="intro"> </p>
+      <p class="show.Div" id="note"> </p>
+      <p class="show.Div" id="result"> </p>
+     </div>
+     
+   </div>
+   
+  </div>
+
+ </div>
+ <script src="script.js"></script>
+</body>
+
+</html>
